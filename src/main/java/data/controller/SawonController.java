@@ -8,6 +8,12 @@ public class SawonController {
 	@GetMapping({"/","/list"})
 	public String sawonList()
 	{
-		return "sawon/sawonlist";		
+		return "sawon/sawonlist";
+	}
+
+	@GetMapping("/form")
+	public String sawonForm()
+	{
+		return "sawon/sawonform";
 	}
 }
